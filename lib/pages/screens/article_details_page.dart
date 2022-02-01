@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_news_api/models/news_article_model.dart';
-import 'package:google_fonts/google_fonts.dart';
 
+// Page displaying the articles of each article when clicked.
 class ArticleDetailsPage extends StatelessWidget {
 
   final NewsArticle article;
@@ -60,8 +60,11 @@ class ArticleDetailsPage extends StatelessWidget {
                 height: 8.0,
               ),
               Center(
-                child: Text(
-                  article.content,
+                child: Card(
+
+                  child: Text(
+                    article.content,
+                  ),
                 ),
               )
             ],

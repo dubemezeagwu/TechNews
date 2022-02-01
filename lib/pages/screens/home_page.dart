@@ -4,6 +4,8 @@ import 'package:flutter_news_api/utils/constants.dart';
 import 'package:flutter_news_api/widgets/articles_list_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
+// Home Page Route
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -13,7 +15,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   PageController _pageController = PageController();
-
 
   @override
   Widget build(BuildContext context) {

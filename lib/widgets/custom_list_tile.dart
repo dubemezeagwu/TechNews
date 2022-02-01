@@ -3,7 +3,7 @@ import 'package:flutter_news_api/models/news_article_model.dart';
 import 'package:flutter_news_api/pages/screens/article_details_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// Custom list tile widget for displays the list of articles.
+// Custom list tile widget, which displays the list of articles.
 Widget customListTile (BuildContext context, NewsArticle article){
   return InkWell(
     onTap: (){

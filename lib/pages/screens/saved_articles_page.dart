@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+// Route for saved articles
 class SavedArticlesPage extends StatefulWidget {
   const SavedArticlesPage({Key? key}) : super(key: key);
 

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+// Search Delegate which inflates a Search screen at the Appbar on the home page
 class DataSearch extends SearchDelegate<String>{
+
+  // Mock data for the search results
   final newsOutlets = [
     "TechCrunch",
     "Daily Dapper",
@@ -9,7 +12,7 @@ class DataSearch extends SearchDelegate<String>{
     "The Sun",
     "Sky Sports"
     "Metro UK",
-    "Jitty",
+    "Jetty",
     "Al-Jazeera",
     "Sky News",
     "Arise TV",
@@ -21,6 +24,7 @@ class DataSearch extends SearchDelegate<String>{
     "Medium",
   ];
 
+  // Mock data for the search results based on the recent search
   final recentNewsOutletsSearch = [
     "Sunrise",
     "Breakfast Club USA",
@@ -31,7 +35,7 @@ class DataSearch extends SearchDelegate<String>{
   List<Widget> buildActions(BuildContext context) {
     // Actions for app bar
     return [IconButton(onPressed: (){
-      query = "";
+      query = "Search";
     }, icon: Icon(Icons.clear))];
   }
 
@@ -42,7 +46,8 @@ class DataSearch extends SearchDelegate<String>{
         onPressed: (){
           close(context, null.toString());
           },
-        icon: AnimatedIcon(icon: AnimatedIcons.menu_arrow,progress: transitionAnimation,));
+         icon: AnimatedIcon(icon: AnimatedIcons.menu_arrow,
+          progress: transitionAnimation,));
   }
 
   @override

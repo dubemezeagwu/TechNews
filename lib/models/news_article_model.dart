@@ -1,5 +1,6 @@
 import 'package:flutter_news_api/models/news_source_model.dart';
 
+// News Article
 class NewsArticle {
   NewsSource source;
   String author, title, url, description, urlToImage, publishedAt, content;
