@@ -12,9 +12,6 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Center(
-          child: Text("Profile"),
-        ),
       ),
     );
   }
